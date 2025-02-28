@@ -41,4 +41,5 @@ def get_price(listing_id):
 
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)  # Change port to 8000
+    app.run(debug=True, host='0.0.0.0', port=10000)  # Use a common Render port like 10000
+
