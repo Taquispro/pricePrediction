@@ -2,9 +2,9 @@ import pandas as pd
 import joblib
 
 # Load the trained model and scaler
-rf_model = joblib.load("rf_model4.pkl")
-scaler = joblib.load("scaler4.pkl")
-features = joblib.load("features4.pkl")
+rf_model = joblib.load("rf_model5.pkl")
+scaler = joblib.load("scaler5.pkl")
+features = joblib.load("features5.pkl")
 
 def predict_price(area, bhk, distance, amenities, balconies):
     new_house = pd.DataFrame([[area, bhk, distance, amenities, balconies]], columns=features)
