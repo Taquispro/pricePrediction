@@ -6,7 +6,7 @@ from predict import predict_price
 app = Flask(__name__)
 CORS(app)
 
-BASE_URL = "http://localhost:3000/api/listing/get/"  # Your frontend API URL
+BASE_URL = "https://major-estate.onrender.com/api/listing/get/"  # Your frontend API URL
 
 @app.route('/predict/<listing_id>', methods=['GET'])
 def get_price(listing_id):
